@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JKMagnussen</title>
+  <link href="resources/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class = 'top'>
+        <img class = 'logo' src = "resources/jkmagnussen-logo.png">
+        <h3>Software Engineer</h3>
+        <h4>(M.A, PGCert)</h4>
+  </div>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>   
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>About</h2>
+        <strong><p class = 'bio'><span style="color:rgb(202, 206, 6)">Console</span><span style="color:rgb(26, 109, 177)">.log</span> (‘<span style="color:rgb(96, 173, 29)">Hello World!</span>’);</strong><br>I’m Joe, a two-time postgraduate software engineer specialising in, you guessed it… <strong>Software</strong>!<br> My toolkit’s centred around the web development paradigm so that I can turn your ideas, into a digital reality. 
+
+        </p>
+        <br>
+        <div class ='skill'>
+            <li class = 'logos'><img src='Resources/javascript.png' height="100" width="100"></li>
+            <li class = 'logos'><img src='Resources/react.png'height="110" width="100"></li>
+            <li class = 'logos'><img src='Resources/python.png'height="160" width="120"></li>
+            <li class = 'logos'><img src='Resources/php.png'height="120" width="110"></li>
+        </div>
+        <div id="bar-horzontal">
+            <div class = 'html'>Html</div>
+            <div class = 'css'>CSS</div>
+            <div class = 'javascript'>JavaScript</div>
+            <div class = 'node'>Node</div>
+            <div class = 'react'>React</div>
+            <div class = 'php'>PHP</div>
+            <div class = 'sql'>SQL</div>
+            <div class = 'python'>Python</div>
+        </div>
+        <br>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Portfolio</h2>
+    </section>
+    <section id="section3" data-nav="Section 3" class="your-active-class">
+      <div class="landing__container">
+        <h2>Contact</h2>
+        <form class='contact-form'>
+          <input name ='name' type ='text' class ='form-control' placeholder="Your Name" required>
+          <input name ='email' type ='email' class ='form-control' placeholder="Your Email" required>
+          <textarea name = 'message' class = 'form-control' placeholder='Message' rows='10' required></textarea>
+          <input type='submit' class='form-control submit' value='SEND MESSAGE'>
+        </form>
+  </main>
+<script src='resources/javascript/script.js'></script>
+<footer>
+  <p> Copyright © 2019, JKMagnussen. All Rights Reserved | Linked in | Github | Blog  </p>
+</footer>
+</body>
+</html>

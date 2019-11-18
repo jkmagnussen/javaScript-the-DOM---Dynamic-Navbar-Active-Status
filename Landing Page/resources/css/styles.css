@@ -1,0 +1,301 @@
+/* ---- Base Rules ---- */
+body {
+    
+    background: white;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+main {
+    overflow: hidden;
+}
+
+
+h2 {
+    border-bottom: 1px solid #cc1;
+    font-family: Arial;
+    font-size: 3em;
+    color: #3B444B;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    line-height: 2em;
+    color: #3B444B;
+    font-family: Arial;
+    font-size: 2vw;
+    text-align: justify;
+}
+.picz {
+    padding: 2em;
+}
+.skill {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0em;
+    justify-content: space-around;
+}
+
+.skill1 {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    padding: 0em;
+}
+
+.work1 {
+    flex-direction: row;
+    margin-top: 0px;
+    width: 70%;
+    height: 100%;
+    padding: 7em;
+}
+.logos{
+    width: 100px;
+    height: 160px;
+    display: flex;
+    float: left;
+    list-style: none;
+}
+
+main {
+    margin: 10vh 1em 10vh;
+}
+
+
+.subtitle {
+    font-family:Arial;
+    font-size: 4em;
+    margin: 2em 4rem 1em;
+}
+
+.main-hero {
+    min-height: 30vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+.navbar__menu ul {
+    margin: 0;
+    text-align: right;
+}
+
+.navbar__menu li {
+    display: inline-block;
+    padding-right: 30px;
+}
+
+.page__header {
+    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(93, 101, 99, 0.50));
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    align-content: right;
+}
+
+.page_footer {
+    color: black;
+    text-align: center;
+    font-size: 3.5vw;
+    padding: 0;
+    font-family: Courier New;
+    background-color: rgba(93, 101, 99, 0.20);
+}
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+.bio {
+    width: 80%;
+    padding-left: 20px;
+    font-size: 1.4em;
+    font-family: Courier New;
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+
+/* ---- Theme State Rules ---- */
+/* Section Active Styles */
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+section.your-active-class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#navbar__list {
+    text-align: right;
+    font-size: 3.5vw;
+    padding: 0;
+    font-family: Courier New;
+    border-bottom:     border-bottom: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(93, 101, 99, 0.70));
+    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(93, 101, 99, 0.20));
+    justify-content: right;
+}
+
+li {
+    padding-right: 2vw;
+    padding-left: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#bar-horzontal {
+    border:1em;
+    padding: 2px;
+    width: 55%;
+    border-right: 1px solid rgba(212, 206, 206, 0.46);
+    font-family:Arial;
+    font-size: 1.2em;
+    color: #f2f2f2;
+    padding-left: 6em;
+    padding-left: 10%;
+  }
+  #bar-horzontal div {
+    color: #fff;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius:4px;
+  }
+
+  .top {
+    width: 100%;
+    height: 115vh;
+    display: flexbox;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+    background-image: url('../ldesk.jpg');
+} 
+.top::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    filter: blur (5px) contrast(80%);
+    size: cover;
+} 
+.top-info {
+    position: absolute;
+    font-size: 40px;
+    text-shadow: 10px 5px 25px rgba(15, 15, 15, 0.5);
+    color: #fff;
+}
+.logo {
+    text-align: center;
+    left: 50%;
+    margin-top: 50%;
+}
+
+h3 {
+    padding: 0;
+    border: 0;
+    text-align: center;
+    font-size: 3em;
+    font-family:Arial;
+    color: white;
+    text-shadow: 2px 2px 4px #413f3f;
+}
+h4 {
+    padding: 0;
+    border: 0;
+    text-align: center;
+    font-size: 2em;
+    font-family:Arial;
+    text-shadow: 2px 2px 4px #413f3f;
+}
+.html {
+background:linear-gradient(90deg, rgba(190,59,38,1) 0%, rgba(194,113,62,1) 50%, rgba(190,55,55,1) 97%); 
+width:90%;
+margin: 0.5em;
+padding: 1em;
+}
+.css{
+background:linear-gradient(90deg, rgba(38,144,170,1) 0%, rgba(29,231,253,1) 50%, rgba(69,191,252,1) 100%); 
+width:80%;
+margin: 0.5em;
+padding: 1em;
+}
+.javascript {
+background:linear-gradient(90deg, rgba(170,154,38,1) 0%, rgba(253,113,29,1) 50%, rgba(252,176,69,1) 100%); 
+width:70%;
+margin: 0.5em;
+padding: 1em;
+}
+.node {
+background:radial-gradient(circle, rgba(78,92,58,1) 7%, rgba(68,168,61,1) 73%); 
+width:80%;
+margin: 0.5em;
+padding: 1em;
+}
+.react {
+background:radial-gradient(circle, rgba(17,89,102,1) 12%, rgba(82,201,190,1) 79%); 
+width:90%;
+margin: 0.5em;
+padding: 1em;
+}
+.php {
+background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(87,175,189,0.9094012605042017) 61%, rgba(144,141,207,1) 100%); 
+width:20%;
+margin: 0.5em;
+padding: 1em;
+}
+.sql {
+background:radial-gradient(circle, rgba(61,164,182,1) 11%, rgba(17,70,93,1) 79%); 
+width:20%;
+margin: 0.5em;
+padding: 1em;
+}
+.python {
+background:linear-gradient(90deg, rgba(38,97,170,1) 0%, rgba(194,167,62,1) 50%, rgba(69,154,252,1) 100%); 
+width:60%;
+margin: 0.5em;
+padding: 1em;
+}
+form {
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+.form-control {
+    width: 90%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid grey;
+    color: #3B444B;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-left: 20px;
+}
+form.submit {
+    background: #ff5722;
+
+}
+footer {
+    padding-left:0.6em;
+    font-size: 14em;
+}
